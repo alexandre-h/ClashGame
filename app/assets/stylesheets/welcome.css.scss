@@ -1,0 +1,108 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*--banner-starts--*/
+.banner-top{
+  background:url(images/image.png) no-repeat;
+  min-height:600px;
+  background-size:cover !important;
+  -webkit-background-size:cover !important;
+  -moz-background-size:cover !important;
+  -o-background-size:cover !important;
+  -ms-background-size:cover !important;
+  position:relative;
+}
+.banner-text {
+  position: absolute;
+  top: 42%;
+  left: 33%;
+  width: 30%;
+  padding: 2em 0px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.76);
+}
+.banner-text h2 {
+  font-size: 15px;
+  border-bottom: 1px solid #190608;
+  color: #190608;
+  padding-bottom: 2px;
+  width: 28%;
+  margin: 0 auto;
+  font-family: 'Raleway-Regular';
+}
+.banner-text h1{
+  font-size:1.5em;
+  margin:20px 0 0 0;
+  color:#190608;
+}
+.banner-btn{
+  margin-top:8%;
+}
+.banner-btn a {
+  color: #190608;
+  padding: 5px 13px;
+  border: 1px solid #190608;
+  font-size: 13px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  font-family: 'Raleway-Regular';
+}
+.banner-btn a:hover{
+  background: #190608;
+  color:#fff;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+}
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#heroes {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+/*--banner-end--*/
+
+.navigation {
+  float: left;
+}
+.header-right {
+  float: right;
+}
+
+.head {
+  position: relative;
+}
+.header {
+  padding: 2em 0px;
+  box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.11);
+}
+ul.navig {
+  padding: 0;
+  margin-top: 1.7%;
+}
+ul.navig li span {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 16px;
+}
+ul.navig li {
+  display: inline-block;
+}
+ul.navig li a {
+  font-size: 1.07em;
+  color: #3d1a1b;
+  text-decoration: none;
+  padding-right: 30px;
+}
+ul.navig li a:hover{
+  color:#999;
+}
+ul.navig li a:hover ul.navig li a:after{
+  display: block;
+}
+
+ul.navig li a.active{
+  color:#999;
+}
