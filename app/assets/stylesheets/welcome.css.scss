@@ -3,9 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*--banner-starts--*/
+.top{
+  padding: 0 !important;
+}
 .banner-top{
-  background:url(images/image.png) no-repeat;
-  min-height:600px;
+  background:asset_url('background-clash.png', image) no-repeat;
+  min-height:800px;
   background-size:cover !important;
   -webkit-background-size:cover !important;
   -moz-background-size:cover !important;
@@ -37,7 +40,7 @@
   color:#190608;
 }
 .banner-btn{
-  margin-top:8%;
+  margin-top:4%;
 }
 .banner-btn a {
   color: #190608;
@@ -60,8 +63,8 @@
   -o-transition: 0.5s all ease;
   -ms-transition: 0.5s all ease;
 }
-#about {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#heroes {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#about {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#heroes {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
 /*--banner-end--*/
 
 .navigation {
@@ -72,11 +75,19 @@
 }
 
 .head {
-  position: relative;
+#position: relative;
+  position: fixed !important;
+  box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.11);
+  width: 100%;
+  z-index: 2033;
+  background-color: #F9F9F9;
+  top: 0;
 }
 .header {
-  padding: 1em 0px;
+  padding: 0.5em 0px;
   box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.11);
+  top: 0;
+  border-width: 0 0 1px;
 }
 ul.navig {
   padding: 0;
