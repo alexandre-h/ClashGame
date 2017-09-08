@@ -11,7 +11,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="header">
+  <nav class="col-md-12 head">
+    <div class="container">
 
+      <div class="navigation">
+        <span class="menu"></span>
+        <ul class="navig">
+          <li><a href="/"class="active">Home</a></li>
+          <li><a href="#heroes">Heroes</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </nav>
+</div>
 <%= yield %>
 
 </body>
