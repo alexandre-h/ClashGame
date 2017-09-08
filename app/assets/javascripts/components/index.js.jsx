@@ -1,8 +1,9 @@
 var Index = React.createClass({
+
     render: function() {
+        employees = this.props.players;
         return (
             <div>
-
                 <div className="container-fluid top">
                     <div className="banner">
                         <div className="banner-top">
@@ -20,6 +21,17 @@ var Index = React.createClass({
                     <div className="col-md-12 text-center">
                         <h1>Heroes</h1>
                         <p>Here you will find some heroes description</p>
+                        <div className="row">
+                        {employees.map(function(player, index){
+                            return <div key={ player.id } className="col-md-6">
+                                <p>name : { player.name } </p>
+                                <p>Life : { player.defense } </p>
+                                <p>Attack : { player.attack } </p>
+                                <p>XP: { player.experience } </p>
+                            </div>;
+                            })
+                        }
+                        </div>
                         <div className="banner-btn">
                             <a href="#section1">More Information</a>
                         </div>
