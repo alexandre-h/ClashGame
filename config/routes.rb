@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'players' => 'player#index'
+
+  get 'player/create'
+
+  get 'player/update'
+
+  get 'player/delete'
+
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
